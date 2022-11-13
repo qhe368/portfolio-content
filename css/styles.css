@@ -1,21 +1,73 @@
-nav {
-  background-color: black;
-  padding: 5px;
-  margin: 3px; 
+*{
+  font-family: 'Kanit', sans-serif ;
 }
 
-nav ul {
-  list-style: none;
+body{
+  background-color: #edf2f8;
+}
+
+h1 {
+  font-size: 2.7em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.h1-text{
+  background-color: #f8f3ed;
+  opacity: 1;
+  color: #2c1919;
+  grid-column: 1/-1;
+  padding:  20px;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: Left;
+  padding-top: 5px;
+  font-weight: bold;
+}
+
+.h2-text{
+  color: #2c1919;
+  text-decoration: green wavy underline;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 1px lightskyblue, 2px 2px 1px blue;
+}
+
+h3 {
+  font-size: 1.3em;
+  text-align: Left;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.h3-text{
+  color: #2c1919;
+  text-decoration: underline;
+}
+
+ul {
+  list-style: square;
+  text-align: left;
+  margin-left: 25px; 
+  padding:0;
+}
+
+nav ul{
   text-align: center;
 }
 
-nav li{
-  display: inline-block;
+li{
   padding: 10px;
-  margin: 0 auto;
+  margin: 0 ;
 }
 
-nav li a{
+nav ul li{
+  display: inline-block;
+}
+
+li a{
   font-family: Arial, 'sans serif';  
   font-size: 20px;
   color: grey; 
@@ -23,45 +75,178 @@ nav li a{
   letter-spacing: 2px;
 } 
 
-nav ul li a:hover {
+nav a:hover {
   color: white;
 }
 
-.active{
-  color: white;
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-figure{
+aside {
+  animation: bounceIn 2s 2;
+}
+
+@media (prefers-reduced-motion) {
+  *{
+    animation: none !important;
+  }
+}
+
+/*.active{
+  color: white;
+  font-weight: 800;
+  text-decoration: underline overline 3px;
+}*/
+#about-intro-text{
+  font-family: "sans serif";
+  border-radius: 25px;
+  margin: 35px 15px 45px;
+  text-align: left;
+  line-height: 1.4;
+  word-spacing: 2px;
+
+}
+.aboutme_pic{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+#exp-miniseg-img{
+  width: 20%;
+  margin: 30px 30%;}
+
+.experience{
+  border: 5px dotted lightskyblue;
+  border-radius: 25px;
+  margin: 30px 10px 40px;
+}
+
+.about_section{
+  border: 5px dotted lightskyblue;
+  border-radius: 25px;
+  margin: 30px 10px 40px;
+  padding: 10px 10px;
+}
+
+.gallery-img, figcaption{
+  width: 100%;
   text-align: center;
 }
 
-img.IndexBackground{
-  width: 800px;
-  height: auto;
-  object-fit: cover;
-  padding: 5px;
-  border: none;
-}
-
-.active{
-  font-weight: 800;
-  text-decoration: underline overline 3px;
-}
-
-img{
-  width: 400px;
+.gallery-items{
+  width: 90%;
   height: auto;
   object-fit: cover;
   padding: 5px;
   border: 5px dashed lightskyblue;
   margin-top: 30px ;
+  margin-bottom: 50px;
 }
 
-img:hover {
+.gallery-items:hover {
   box-shadow: 10px 10px 30px 5px lightgrey;
 }
 
 footer{
+  background-color: #f8f3ed;
+  color: black;
   text-align: center;
   padding: 5px;
+  grid-column: 1 / -1;
+}
+
+nav {
+  background-color: black;
+  padding: 5px;
+  margin: 3px; 
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+#h1-home{
+  background-attachment: scroll; /* Parallax effect */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  height: auto;                /* Parallax effect */
+  background-color: #DDDDDD;
+  background-image: url('../images/dawn.JPG');
+  min-height: 300px;
+  vertical-align: middle;
+}
+
+#h1-text-home{
+  background-color: #f8f3ed;
+  color: #2c1919;
+  grid-column: 1/-1;
+  padding:  20px;
+  position: relative;
+  top: 40px;
+}
+
+#intro, #intro2{
+  border: #ddc3a4 outset ;
+  background-color: #f8f3ed;
+  opacity: 0.65;
+  margin: 10px 30px;
+  padding: 50px 30px;
+  color: black;
+  text-align: left;
+}
+
+#intro2{
+  margin-bottom: 150px;
+}
+
+aside{
+  border: #ddc3a4 dotted ;
+  margin: 0px 100px 30px;
+  padding: 5px 5px;
+  color: #2c1919;
+  text-align: center;
+}
+
+/*Gallery Page flex*/
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*DesktopView*/
+@media all and (min-width: 700px) {
+
+  .gallery-items{
+    border: 2px solid lightskyblue;
+    margin-top: 30px ;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+  }
 }
