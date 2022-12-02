@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-52MDXNJVV8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-52MDXNJVV8');
+	</script>
 	<meta charset="UTF-8">
-	<link rel="icon" href="images/favicon.jpg">
+	<link rel="icon" href="images/favicon-32x32.png">
 	<title>GALLERY | Qilin He</title> 
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -10,8 +18,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+
+<body id="gallery-body-grid">
 	<header>
+		<a class="skip-link" href='#gallery-main'>Skip to content</a>
 		<nav>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -21,47 +31,51 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<h1 class="h1-text">Gallery</h1>
+	<main id='gallery-main'>
+	<h1 class="h1-text">Gallery</h1>
+		<div id='projects-grid'> 
 		<h2 class="h2-text">Projects</h2>
 		<figure class="gallery">
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/MTI.jpg" alt="Marine Trash Interceptor Prototype Testing" width="300"/>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/MTI.jpg" alt="Marine Trash Interceptor Prototype Testing" width="300">
 		   <figcaption>Marine Trash Interceptor Prototype Testing</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <video class="gallery-img" controls width="300"> <source src="images/miniseg_video.mov" alt="Video of two MiniSeg Self-balancing" width="300"/></video>
-		   <figcaption>Two MiniSeg Robots Self-Balancing</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/conveyor.jpg" alt="Conveyor Belt Design in MTI project" width="300"/>
-		   <figcaption>Conveyor Belt Design in MTI project</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/cannon.jpg" alt="Photo of Machined Cannon Project" width="300"/>
-		   <figcaption>Photo of Machined Cannon Project</figcaption>
-		</div>
 		</figure>
+		<figure class="gallery-items">
+		   <video class="gallery-img" controls width="300" title="Video of two MiniSeg Self-balancing"> <source src="images/miniseg_video.mov" ></video>
+		   <figcaption>Two MiniSeg Robots Self-Balancing</figcaption>
+		</figure>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/conveyor.jpg" alt="Conveyor Belt Design in MTI project" width="300">
+		   <figcaption>Conveyor Belt Design in MTI project</figcaption>
+		</figure>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/cannon.jpg" alt="Photo of Machined Cannon Project" width="300">
+		   <figcaption>Photo of Machined Cannon Project</figcaption>
+		</figure>
+		</figure>
+		</div>
 
+		<div id='Leisure-grid'> 
 		<h2 class="h2-text">Leisure Activities</h2>
 		<figure class="gallery">
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/white_rose.jpg" alt="Floral Design of White Rugosa Rose" width="300"/>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/white_rose.jpg" alt="Floral Design of White Rugosa Rose" width="300">
 		   <figcaption>Floral Design of White Rugosa Rose</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/floraldesign.jpg" alt="Floral Design with different kind of flowers" width="300"/>
-		   <figcaption>Floral Design with different kind of flowers</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/puzzles.jpg" alt="Irregular Shaped Puzzles: Snoopy, Trees in Fall, and Cat in colors" width="300"/>
-		   <figcaption>Irregular Shaped Puzzles: Snoopy, Trees in Fall, and Cat in colors</figcaption>
-		</div>
-		<div class="gallery-items">
-		   <img class="gallery-img" src="images/gold_enamel_painting.jpg" alt="Handcrafted Gold Enamel Painting" width="300"/>
-			<figcaption>Handcrafted Gold Enamel Painting: Wufu (Five Blessings)</figcaption>
-		</div>
 		</figure>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/floraldesign.jpg" alt="Floral Design with different kind of flowers" width="300">
+		   <figcaption>Floral Design with different kind of flowers</figcaption>
+		</figure>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/puzzles.jpg" alt="Irregular Shaped Puzzles: Snoopy, Trees in Fall, and Cat in colors" width="300">
+		   <figcaption>Irregular Shaped Puzzles: Snoopy, Trees in Fall, and Cat in colors</figcaption>
+		</figure>
+		<figure class="gallery-items">
+		   <img class="gallery-img" src="images/gold_enamel_painting.jpg" alt="Handcrafted Gold Enamel Painting" width="300">
+			<figcaption>Handcrafted Gold Enamel Painting: Wufu (Five Blessings)</figcaption>
+		</figure>
+		</figure>
+		</div>
 	</main>
 
 	<footer>

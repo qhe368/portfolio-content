@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-52MDXNJVV8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-52MDXNJVV8');
+	</script>
 	<meta charset="UTF-8">
-	<link rel="icon" href="images/favicon.jpg">
+	<link rel="icon" href="images/favicon-32x32.png">
 	<title>Qilin He</title>
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -11,9 +19,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
 <div class="grid-container">
 	<header>
+		<a class="skip-link" href='#index-main'>Skip to content</a>
 		<nav>
 			<ul>
 				<li class="active"><a href="index.html"><i class="fa fa-smile-o fa-lg" aria-hidden="true"></i>HOME</a></li>
@@ -24,7 +34,7 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id='index-main'>
 		<div id="h1-home">
 			<h1 id="h1-text-home">Qilin (Elaine) He</h1>
 			<i class="fa-duotone fa-camera-retro"></i>
@@ -36,7 +46,20 @@
 			Thanks for stopping by my portfolio! This website is created as my project for the Design of Complex Website course. Besides, this website also is an online portfolio for those who want to know more about me and what I have done. 
 
 		</p>
+		<form action="https://formspree.io/f/xqkjogoa" method="POST">
+		<div id='name-input'>
+			<label>  Your Name: <input type="name" name="name"></label>
+		</div>
+		<div id='email-input'>
+  			<label>  Your email: <input type="email" name="email"></label>
+  		</div>
+  		<div id='feedback-input'>
+  			<label>	 Your feedback: <textarea name="message"></textarea></label>
+  		</div>
+  		<button type="submit" onclick="alert('Thank you for your feedback!')">Send</button>
+		</form>
 	</main>
+
 	<aside>
 		<p> Please bare with me, and see how the progress goes! </p>
 	</aside>

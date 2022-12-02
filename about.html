@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-52MDXNJVV8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-52MDXNJVV8');
+	</script>
 	<meta charset="UTF-8">
-	<link rel="icon" href="images/favicon.jpg">
+	<link rel="icon" href="images/favicon-32x32.png">
 	<title>ABOUT | Qilin He</title>
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -11,8 +19,11 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
+<div class="entire-grid-about">
 	<header>
+		<a class="skip-link" href='#about-main'>Skip to content</a>
 		<nav>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -23,15 +34,16 @@
 		</nav>
 	</header>
 
-	<main>
+	<main id='about-main'>
 		<h1 class="h1-text">About Me</h1>
 		<figure class="about_img_parent">
-			<img class="responsive aboutme_pic" src="images/aboutme_pic.jpg" alt="Photo of Qilin" width="300"/>
+			<img class="responsive_aboutme_pic" id='me-pic' src="images/aboutme_pic.jpg" alt="Photo of Qilin" width="300">
+			<p id="aboutme-pic-greeting"></p>
 		</figure>
 		<div id="about-intro">
 			<p id="about-intro-text">Since I was little, I loved dismantling toys into a heap and rebuilding them. But my fascination with the STEM fields began as I joined the LEGO robotics club in my middle school after school activity. I am delighted with the process of problem-solving, a process of observing, analyzing, and testing. During the process of dealing with an integrated problem, I learned something: A complexity is never complex. No matter how intricate the problem is, it is composed of different tiny parts. As long as I organized an outline of the process, a complex problem could be broken down into several small problems. I have extensive experience in completing system-level design and collaborating with cross-functional teams, and I learned that full product development requires multidisciplinary skills which is why I am taking the web design course.</p>
 		</div>
-		<div class="about_section">
+		<div class="about_section" id='core-value'>
 		<h2 class="h2-text">Core Values</h2>
 		<h3 class="h3-text">Resilience</h3>
 		<p>
@@ -45,10 +57,10 @@
 			meet the standards. 
 		</p>
 		</div>
-		<div class="about_section">
+		<div class="about_section" id='skill'>
 		<h2 class="h2-text">Skills</h2>
 		<h3 class="h3-text">Programs</h3>
-			<ul>
+			<ul class='about-list'>
 				<li>Python, MATLAB & Simulink, R Language</li>
 				<li>Autodesk Fusion 360, SiemensNX 12.0</li>
 				<li>LTspice XVII</li>
@@ -60,7 +72,7 @@
 				<li>Welding, Soldering, Wiring, Lathe, Milling Machines, Drill Press, Band Saw, Chop Saw</li>
 			</ul>
 		</div>
-		<div class="about_section">
+		<div class="about_section" id='about-hobbies'>
 		<h2 class="h2-text">Hobbies</h2>
 		<p>Outside of my role as an engineer, I have passions for tennis, swimming, Jigsaw Puzzle, Lego and Floral Design.
 		You will also find some pictures in the gallery page.
@@ -70,5 +82,7 @@
 	<footer>
 		Qilin He &copy;2022
 	</footer>
+</div>
+<script src="js/project.js"></script>
 </body>
 </html>

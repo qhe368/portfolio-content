@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-52MDXNJVV8"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-52MDXNJVV8');
+	</script>
 	<meta charset="UTF-8">
-	<link rel="icon" href="images/favicon.jpg">
+	<link rel="icon" href="images/favicon-32x32.png">
 	<title>EXPERIENCE | Qilin He</title>
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -11,8 +19,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
 	<header>
+		<a class="skip-link" href='#work-grid'>Skip to content</a>
 		<nav>
 			<ul>
 				<li><a href="index.html">HOME</a></li>
@@ -22,11 +32,17 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<h1 class="h1-text">Work Experience</h1>
-		<div class="experience">
+
+	<main id='experience-main'>
+		<a class="learnmore-button" href='#work-experience'>Learn More: Work Experience</a>
+		<a class="learnmore-button" href='#practical-experience'>Learn More: Practical Experience</a>
+
+	<div id='work-grid'>
+		<h1 class="h1-text" id='work-experience'>Work Experience</h1>
+	<div id='work-experience-flex'>
+		<div class="experience" >
 			<h3 class="h3-text">Academic Service Assistance, Department of Core Engineering in RPI</h3>
-			<ul>
+			<ul class='experience-list'>
 				<li>Worked as Student Assistance for Introduction of Engineering Analysis course.</li>
 				<li>Assisted Teacher Assistance and Professor in answering students’ questions during lecture and through Webex.</li>
 				<li>Attended all classes and provided guidance to a class of 50+ students for their class assignments. </li>
@@ -34,16 +50,21 @@
 		</div>
 		<div class="experience">
 			<h3 class="h3-text">Human Resource Intern, Volkswagen (China) Investment Co.,Ltd.</h3>
-			<ul>
+			<ul class='experience-list'>
 				<li>Conducted development process towards Management & Leadership as well as the Management& Leadership qualification.</li>
 				<li>Helped organized 100 hours of training and development initiatives.</li>
 				<li>Supported on Volkswagen Management & Succession Planning in organization and collaboration with other Volkswagen Group entities. </li>
 			</ul>
 		</div>
-		<h1 class="h1-text">Practical Projects</h1>
-		<div class="experience">
+	</div>
+	</div>
+		
+	<div id='practical-grid'>
+		<h1 class="h1-text" id='practical-experience'>Practical Projects</h1>
+	<div id='practical-experience-flex'>
+		<div class="experience" >
 			<h3 class="h3-text">System Design for the MinSeg Miniature Self-Balancing Robot, NY, US</h3>
-			<ul>
+			<ul class='experience-list'>
 				<li>Identified parameters of the system, and developed a mathematical model with simplifying assumptions </li>
 				<li>Analyzed results of actual hardware and the results produced by the mathematical model</li>
 				<li>Adjusted the system’s parameters to make the experimental results better match theoretical results</li>
@@ -58,7 +79,7 @@
 			<p>
 				Project Introduction: Evaluating the Luminescent Solar Concentrators (LSC) performance by running the Monte Carlo Ray-Tracing simulation throughout different geometries and a huge number of bundles; Aiming to enhance the system efficiency and lower the energy loss through system optimization analysis method to balance the energy generation and consumption of the system.
 			</p>
-			<ul>
+			<ul class='experience-list'>
 				<li>Participated in the Cython group to boost the efficiency of simulation by using Cython extension type</li>
 				<li>Researched and analyzed the LSC output like code execution time in the simulation</li>
 				<li>Increased the efficiency of the x, y, and z functions in the rotation Python file by 40%, decreased the execution time of 500000 bundles by 11%  </li>
@@ -68,7 +89,7 @@
 			<h3 class="h3-text">Thermal Design of iPhone SE, NY, US</h3>
 			<p>
 				Designed a straight-fin heat sink to help dissipate the heat and maintain the phone working temperature below 30°C with two times the thermal design power (TDP)</p>
-			<ul>
+			<ul class='experience-list'>
 				<li>Benchmarked different cooling systems, materials (thermal conductivity, density, cost, and life span), and the coolant fluid for the heat sink</li>
 				<li>Made a simulation design drawing through CAD after obtaining the size parameters of the back of the phone</li>
 				<li>Implemented thermal analysis to determine the heat transfer rate of the designed heat sink</li>
@@ -78,8 +99,8 @@
 		</div>
 		<div class="experience">
 			<h3 class="h3-text">Design of Marine Trash Interceptor, NY, US</h3>
-			<ul>
-				</li>Investigated customer needs (e.g., dimensions, garbage types, costs) through questionnaires, participated in cross-functional product development meetings to establish corresponding design criteria and specifications </li>
+			<ul class='experience-list'>
+				<li>Investigated customer needs (e.g., dimensions, garbage types, costs) through questionnaires, participated in cross-functional product development meetings to establish corresponding design criteria and specifications </li>
 				<li>Drew CAD schematic diagrams including structure of the prototype and all parts of the conveyor system</li>
 				<li>Conducted structural analysis to support the design by calculating the buoyancy for floating objects and the operation power for the conveyer belt</li>
 				<li>Calculated the correlation of friction of the belt and incline angle, as well as the maximum weight that would hold in the inclined surface </li>
@@ -88,17 +109,19 @@
 		</div>
 		<div class="experience">
 			<h3 class="h3-text">Naval Cannon Model Manufacturing, NY, US</h3>
-			<ul>
+			<ul class='experience-list'>
 				<li>Learned practical application of different machining tools in the machine shop</li>
 				<li>Manufactured the cannon base with the operation of horizontal and vertical milling machines, and the cannon barrel with the practice of lath techniques such as facing-off drilling and axial drilling</li>
 				<li>Assembled each part into the whole cannon model, and operated bandsaw to polish the model</li>
 			</ul>
 		</div>
-		</main>
+	</div>
+	</main>
 
 
 		<footer>
 			Qilin He &copy;2022
-		</footer>
+		</footer>S
+</div>
 </body>
 </html>
