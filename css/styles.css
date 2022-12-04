@@ -340,7 +340,7 @@ aside{
 }
 
 /*TabletView*/
-@media all and (min-width: 700px) {
+@media all and (min-width: 768px) {
 
 ul{
   display: flex;
@@ -486,7 +486,7 @@ figcaption{
 
 /*LaptopView*/
 
-@media all and (min-width: 1200px) { 
+@media all and (min-width: 1024px) { 
 
 ul{ 
   flex-direction: row;
